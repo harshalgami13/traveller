@@ -1,0 +1,553 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&family=Montserrat:wght@200;300;400;500;600&display=swap');
+
+:root {
+    --white-color: #fff;
+    --dark-gray-color: #363636;
+    --light-gray-color: #818181;
+    --dark-blue-color: #5b5bff;
+}
+
+::selection {
+    background-color: var(--dark-blue-color);
+    color: var(--white-color);
+}
+
+/*
+font-family: 'Jost', sans-serif;
+font-family: 'Montserrat', sans-serif;
+*/
+
+
+/* header1 */
+.header1.open {
+    top: 0vh;
+    transition: 0.3s ease-in-out 0.5s;
+}
+
+.header1 {
+    width: 100%;
+    top: -12vh;
+    height: 12vh;
+    display: flex;
+    z-index: 150;
+    position: absolute;
+    transition: 0.3s ease-in-out;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white-color);
+}
+
+.header1 input {
+    width: 50%;
+}
+
+.header1 input {
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid;
+    padding: 0.02em 5px;
+}
+
+.header1 input:focus-visible {
+    outline: none;
+}
+
+.header1 button {
+    border: none;
+    background-color: transparent;
+}
+
+.header1 button i {
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+
+/* header2 */
+.header2.dark {
+    background-color: var(--dark-gray-color);
+}
+
+.header2 {
+    position: absolute;
+    width: 100%;
+    min-height: 12vh;
+    transition: 0.4s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+    z-index: 100;
+}
+
+.header2.show .navmenubtn {
+    display: initial;
+}
+
+.header2 .navmenubtn {
+    display: none;
+}
+
+.header2 .navmenubtn button {
+    border: none;
+    background-color: transparent;
+}
+
+.header2 .navmenubtn button i {
+    color: var(--white-color);
+    font-size: 1.45em;
+}
+
+
+
+.header2 .img img {
+    width: 150px;
+}
+
+.header2 nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.header2 nav ul li {
+    list-style-type: none;
+    padding: 0 15px;
+}
+
+.header2 nav ul li a {
+    text-decoration: none !important;
+    color: var(--white-color);
+    font-family: 'Jost', sans-serif;
+    font-size: 2.05vh;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 0.28s ease-in-out;
+}
+
+.header2 nav ul li a:hover {
+    color: var(--dark-blue-color);
+}
+
+/* side-menu-header2 */
+.side-menu-header2.show {
+    top: 12vh;
+}
+
+.side-menu-header2 {
+    position: absolute;
+    top: -48vh;
+    width: 100%;
+    transition: 0.3s cubic-bezier(0.18, 0.85, 0.84, 0.93) 0.2s;
+    background-color: var(--white-color);
+    height: 48vh;
+}
+
+.side-menu-header2 .nav1 ul {
+    margin: 0;
+    height: 48vh;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+.side-menu-header2 .nav1 ul li {
+    list-style: none;
+}
+
+.side-menu-header2 .nav1 ul li a {
+    color: var(--dark-gray-color);
+    text-decoration: none;
+    font-size: 2.45vh;
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+.side-menu-header2 .nav1 ul li a:hover {
+    color: var(--dark-blue-color);
+}
+
+@media (max-width: 768px) {
+    .header2 nav {
+        display: none;
+    }
+
+    .section2 .section2-part3,
+    .section3 .section3-part2,
+    .section4 .section4-part2 {
+        width: 95% !important;
+    }
+}
+
+
+/* section1 */
+.section1 {
+    background: url(/Asstes/wallpaper.jpg) no-repeat;
+    height: 100vh;
+    background-position: center;
+    display: flex;
+    background-size: cover;
+    color: var(--white-color);
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 7vh 10px;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+
+}
+
+.section1 .section1-part1 {
+    margin: 30px auto;
+    font-size: 2.15vh;
+    color: var(--white-color);
+    font-family: 'Jost', sans-serif;
+    font-size: 2.95vh;
+    font-weight: 600;
+    letter-spacing: 2px;
+
+}
+
+.section1 .section1-part2 {
+    text-align: center;
+    font-size: 2.25vh;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* section2 */
+.section2 {
+    padding: 80px 10px;
+    background: url(/Asstes/background.jpg);
+    background-size: initial;
+    text-align: center;
+}
+
+.section2 .section2-part1,
+.section2 .section2-part2,
+.section2 .section2-part3 {
+    margin: 15px 0;
+}
+
+.section2 .section2-part1 {
+    font-size: 1em;
+    font-weight: 500;
+    color: var(--dark-gray-color);
+    font-family: 'Jost', sans-serif;
+}
+
+.section2 .section2-part2 {
+    font-size: 4.5vh;
+    font-weight: 400;
+    color: var(--dark-gray-color);
+    font-family: 'Jost', sans-serif;
+}
+
+.section2 .section2-part3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.32vh;
+    color: var(--light-gray-colo);
+    width: 68%;
+    margin: 0 auto;
+}
+
+.section2 .section2-part3 p {
+    margin: 1.5em 0;
+}
+
+
+/* section3 */
+.section3 {
+    padding: 80px 10px 10px 10px;
+    text-align: center;
+    position: relative;
+    background-color: white;
+    z-index: 150;
+}
+
+.section3 .section3-part1,
+.section3 .section3-part2,
+.section3 .section3-part3 {
+    margin: 15px 0;
+}
+
+.section3 .section3-part1 {
+    font-size: 1.5em;
+    font-weight: 400;
+    color: var(--dark-gray-color);
+    font-family: 'Jost', sans-serif;
+}
+
+.section3 .section3-part2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.32vh;
+    color: var(--light-gray-colo);
+    width: 68%;
+    margin: 0 auto;
+}
+
+.section3 .section3-part3 {
+    margin: 8vh 0;
+}
+
+.section3 .section3-part3 .boxes img {
+    width: 100%;
+}
+
+.section3 .section3-part3 .boxes .box-text {
+    padding: 30px 20px;
+    margin: 0 auto;
+    width: 92%;
+}
+
+.section3 .section3-part3 .boxes .box-text a {
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.32vh;
+    color: var(--dark-gray-color);
+    text-decoration: none;
+    transition: 0.21s ease-in-out;
+}
+
+.section3 .section3-part3 .boxes .box-text a:hover {
+    color: var(--dark-blue-color);
+}
+
+
+/* section4 */
+
+.section4 {
+    padding: 0px 10px 80px 10px;
+    text-align: center;
+    background-color: white;
+    z-index: 150;
+}
+
+.section4 .section4-part1,
+.section4 .section4-part2,
+.section4 .section4-part3 {
+    margin: 15px 0;
+}
+
+.section4 .section4-part1 {
+    font-size: 1.5em;
+    line-height: 6vh;
+    font-weight: 400;
+    color: var(--dark-gray-color);
+    font-family: 'Jost', sans-serif;
+}
+
+.section4 .section4-part2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.32vh;
+    color: var(--light-gray-colo);
+    width: 68%;
+    margin: 0 auto;
+}
+
+.section4 .section4-part3 .left-side,
+.section4 .section4-part3 .right-side {
+    margin: 25px 0;
+}
+
+.section4 .section4-part3 .left-side .box {
+    position: relative;
+}
+
+.section4 .section4-part3 .left-side .box .img {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section4 .section4-part3 .left-side .box .img .img-text {
+    position: absolute;
+    bottom: 10%;
+    width: 90%;
+    color: var(--white-color);
+    font-size: 2.85vh;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.section4 .section4-part3 .left-side .box .img img {
+    width: 100%;
+}
+
+.section4 .section4-part3 .left-side .box .box-text {
+    position: absolute;
+}
+
+.section4 .section4-part3 .right-side {
+    text-align: left;
+}
+
+.section4 .section4-part3 .right-side ul {
+    display: flex;
+    flex-direction: column;
+    height: 30.6em;
+    background-color: #f7f7f7;
+    padding: 30px;
+    justify-content: space-around;
+}
+
+.section4 .section4-part3 .right-side ul li {
+    padding: 20px 0px;
+    margin: 0 !important;
+    list-style: none;
+    border-bottom: 2px solid #e6e6e6;
+}
+
+.section4 .section4-part3 .right-side ul li:nth-last-child(1) {
+    border: none;
+}
+
+.section4 .section4-part3 .right-side ul li a {
+    text-decoration: none;
+    color: var(--dark-gray-color);
+    transition: 0.2s ease-in-out;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: 'Jost', sans-serif;
+}
+
+.section4 .section4-part3 .right-side ul li a:hover {
+    color: var(--dark-blue-color);
+}
+
+
+/* section5 */
+.section5 {
+    padding: 80px 10px;
+    /* background: url(/Asstes/background.jpg); */
+    background-color: #f8f8f8;
+    background-size: initial;
+    text-align: center;
+}
+
+.section5 .section5-part1,
+.section5 .section5-part2,
+.section5 .section5-part3 {
+    margin: 25px 0 10px 0;
+}
+
+.section5 .section5-part1 {
+    font-size: 1.5em;
+    line-height: 6vh;
+    font-weight: 400;
+    color: var(--dark-gray-color);
+    font-family: 'Jost', sans-serif;
+}
+
+.section5 .section5-part2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.32vh;
+    color: var(--light-gray-colo);
+    width: 70%;
+    margin: 0 auto;
+}
+
+.section5 .section5-part3 {
+    margin-top: 55px !important;
+}
+
+.section5 .section5-part3 .swiper {
+    width: 100%;
+    height: 100%;
+    cursor: grab;
+}
+
+.section5 .section5-part3 .swiper :active {
+    cursor: grabbing;
+}
+
+.section5 .section5-part3 .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    position: relative;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: flex-end;
+}
+
+.section5 .section5-part3 .swiper-slide img {
+    display: block;
+    height: 40vw;
+    width: 100%;
+    object-fit: cover;
+}
+
+.section5 .section5-part3 .swiper-button-prev,
+.section5 .section5-part3 .swiper-rtl .swiper-button-next {
+    left: 14px;
+    right: auto;
+}
+
+.section5 .section5-part3 .swiper-button-next,
+.section5 .section5-part3 .swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    /* width: calc(var(--swiper-navigation-size)/ 44 * 27); */
+    width: 11%;
+    height: var(--swiper-navigation-size);
+    margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white-color);
+}
+
+.section5 .section5-part3 .swiper-button-next:after,
+.section5 .section5-part3 .swiper-button-prev:after {
+    font-family: swiper-icons;
+    font-size: 2.8vh;
+    text-transform: none !important;
+    letter-spacing: 0;
+    font-variant: initial;
+    line-height: 1;
+}
+
+.section5 .section5-part3 .img-text {
+    position: absolute;
+    color: var(--white-color);
+    z-index: 10000;
+    font-size: 2.3vh;
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-transform: uppercase;
+    width: 40%;
+    padding: 5px 10px;
+    background-color: #535353;
+    transition: 0.3s ease-in-out;
+    bottom: 10%;
+    font-family: 'Jost', sans-serif;
+}
+
+.section5 .section5-part3 .swiper:hover .img-text {
+    background-color: #242424;
+}
