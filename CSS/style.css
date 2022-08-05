@@ -191,7 +191,7 @@ font-family: 'Montserrat', sans-serif;
 
 /* section1 */
 .section1 {
-    background: url(/Asstes/wallpaper.jpg) no-repeat;
+    background: url(/Asstes/wallpaper.png) no-repeat;
     height: 100vh;
     background-position: center;
     display: flex;
@@ -228,7 +228,7 @@ font-family: 'Montserrat', sans-serif;
 /* section2 */
 .section2 {
     padding: 80px 10px;
-    background: url(/Asstes/background.jpg);
+    background: url(/Asstes/background.png);
     background-size: initial;
     text-align: center;
 }
