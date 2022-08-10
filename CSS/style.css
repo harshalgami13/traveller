@@ -191,7 +191,7 @@ font-family: 'Montserrat', sans-serif;
 
 /* section1 */
 .section1 {
-    background: url(/Asstes/wallpaper.png) no-repeat;
+    background: url(../Asstes/wallpaper.png) no-repeat;
     height: 100vh;
     background-position: center;
     display: flex;
@@ -228,7 +228,7 @@ font-family: 'Montserrat', sans-serif;
 /* section2 */
 .section2 {
     padding: 80px 10px;
-    background: url(/Asstes/background.png);
+    background: url(../Asstes/background.png);
     background-size: initial;
     text-align: center;
 }
@@ -550,4 +550,91 @@ font-family: 'Montserrat', sans-serif;
 
 .section5 .section5-part3 .swiper:hover .img-text {
     background-color: #242424;
+}
+
+/* section6 */
+.section6 {
+    padding: 70px 10px 50px 10px;
+}
+
+
+.section6 .section6-part1,
+.section6 .section6-part2,
+.section6 .section6-part3 {
+    margin: 25px 0 10px 0;
+}
+
+.section6 .section6-part1 {
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 6vh;
+    font-weight: 400;
+    color: var(--dark-gray-color);
+    font-family: 'Jost', sans-serif;
+}
+
+.section6 .section6-part2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.32vh;
+    color: var(--light-gray-colo);
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section6 .section6-part3 {
+    margin-top: 55px !important;
+}
+
+.section6 .section6-part3 ul {
+    display: flex;
+    height: 25.5em;
+    margin: 0;
+    padding: 0;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.section6 .section6-part3 ul li{
+    padding: 5px;
+    list-style: none;
+}
+.section6 .section6-part3 .left-side ul li{
+    text-align: right;
+}
+@media (max-width: 768px) {
+    .section6 .section6-part3 .left-side{
+        display: none;
+    }
+}
+
+.section6 .section6-part3 ul li a{
+    color: var(--dark-gray-color);
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+    font-family: 'Jost', sans-serif;
+    font-size: 2.55vh;
+}
+.section6 .section6-part3 ul li a:hover{
+    color: var(--dark-blue-color);
+}
+.section6 .section6-part3 .box-image {
+    position: relative;
+}
+
+.section6 .section6-part3 .box-image img {
+    width: 100%;
+}
+
+.section6 .section6-part3 .box-image .box-text {
+    color: var(--white-color);
+    position: absolute;
+    bottom: 7%;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    font-size: 2.95vh;
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+    padding: 5px 25px;
 }
